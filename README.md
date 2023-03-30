@@ -12,7 +12,7 @@
   </p>
 </div>
 
-# pytubeX
+# Yt-down
 Now unmaintained lol. I have exams and stuff.
 
 # FAIR USE POLICY
@@ -33,7 +33,7 @@ Now unmaintained lol. I have exams and stuff.
 Download using pip via pypi.
 
 ```bash
-$ pip install pytubeX
+$ pip install pytube
 ```
 (Mac/homebrew users may need to use ``pip3``)
 
@@ -41,15 +41,15 @@ $ pip install pytubeX
 ## Quick start
 ```python
  >>> from pytube import YouTube
- >>> YouTube('www.youtube.com/watch?v=MKAMBWTmHpY').streams.get_highest_resolution().download()
+ >>> YouTube('www.youtube.com/watch?v=G3_IxqkLXus').streams.get_highest_resolution().download()
  >>>
- >>> yt = YouTube('www.youtube.com/watch?v=MKAMBWTmHpY')
+ >>> yt = YouTube('www.youtube.com/watch?v=G3_IxqkLXus')
  >>> yt.streams
   ... .filter(progressive=True, file_extension='mp4')
   ... .order_by('resolution')[-1]
   ... .download()
 ```
-A GUI frontend for pytube3 is available at [YouTubeDownload](https://github.com/YouTubeDownload/YouTubeDownload)
+A GUI frontend for pytube3 is available at [YouTubeDownload](https://github.com/Mexazo-07/Yt-down)
 
 ## Features
   * Support for Both Progressive & DASH Streams
@@ -68,14 +68,14 @@ Let's begin with showing how easy it is to download a video with pytube:
 
 ```python
 >>> from pytube import YouTube
->>> YouTube('http://youtube.com/watch?v=9bZkp7q19f0').streams[0].download()
+>>> YouTube('http://youtube.com/watch?v=G3_IxqkLXus').streams[0].download()
 ```
 This example will download the highest quality progressive download stream available.
 
 Next, let's explore how we would view what video streams are available:
 
 ```python
->>> yt = YouTube('http://youtube.com/watch?v=9bZkp7q19f0')
+>>> yt = YouTube('http://youtube.com/watch?v=G3_IxqkLXus')
 >>> print(yt.streams)
  [<Stream: itag="22" mime_type="video/mp4" res="720p" fps="30fps" vcodec="avc1.64001F" acodec="mp4a.40.2">,
  <Stream: itag="43" mime_type="video/webm" res="360p" fps="30fps" vcodec="vp8.0" acodec="vorbis">,
@@ -300,8 +300,8 @@ This project is linted with [pyflakes](https://github.com/PyCQA/pyflakes), forma
 Treat other people with helpfulness, gratitude, and consideration! See the [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/).
 
 ## GUIs and other libraries
-* [YouTubeDownload](https://github.com/YouTubeDownload/YouTubeDownload) - Featured GUI frontend for pytube3
-* [Pytube-GUI](https://github.com/GAO23/Pytube-GUI) - Simple GUI frontend for pytube3
+* [YouTubeDownload](https://github.com/Mexazo-07/Yt-down) - Featured GUI frontend for pytube3
+* [Pytube-GUI](https://github.com/Mexazo-07/Pytube-GUI) - Simple GUI frontend for pytube3
 * [StackOverflow questions](https://stackoverflow.com/questions/tagged/pytube)
 * [PySlackers](https://pyslackers.com/web) - Python Slack group
 
